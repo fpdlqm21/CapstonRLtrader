@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\index.cshtml" />
+    <None Include="wwwroot\QWebview-plus-master\.gitignore" />
+    <None Include="wwwroot\QWebview-plus-master\dist\QWebview-plus-1.0-win32.msi" />
+    <None Include="wwwroot\QWebview-plus-master\index.html" />
+    <None Include="wwwroot\QWebview-plus-master\LICENSE.md" />
+    <None Include="wwwroot\QWebview-plus-master\plus\kiwoom.py" />
+    <None Include="wwwroot\QWebview-plus-master\plus\util.py" />
+    <None Include="wwwroot\QWebview-plus-master\plus\web.py" />
+    <None Include="wwwroot\QWebview-plus-master\plus\__init__.py" />
+    <None Include="wwwroot\QWebview-plus-master\plus\__pycache__\core.cpython-35.pyc" />
+    <None Include="wwwroot\QWebview-plus-master\plus\__pycache__\kiwoom.cpython-34.pyc" />
+    <None Include="wwwroot\QWebview-plus-master\plus\__pycache__\kiwoom.cpython-35.pyc" />
+    <None Include="wwwroot\QWebview-plus-master\plus\__pycache__\util.cpython-34.pyc" />
+    <None Include="wwwroot\QWebview-plus-master\plus\__pycache__\util.cpython-35.pyc" />
+    <None Include="wwwroot\QWebview-plus-master\plus\__pycache__\web.cpython-34.pyc" />
+    <None Include="wwwroot\QWebview-plus-master\plus\__pycache__\web.cpython-35.pyc" />
+    <None Include="wwwroot\QWebview-plus-master\plus\__pycache__\__init__.cpython-34.pyc" />
+    <None Include="wwwroot\QWebview-plus-master\plus\__pycache__\__init__.cpython-35.pyc" />
+    <None Include="wwwroot\QWebview-plus-master\qwebviewplus.py" />
+    <None Include="wwwroot\QWebview-plus-master\README.md" />
+    <None Include="wwwroot\QWebview-plus-master\setup.py" />
+    <None Include="wwwroot\QWebview-plus-master\__pycache__\plus.cpython-35.pyc" />
+  </ItemGroup>
+
+</Project>

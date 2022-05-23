@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+</head>
+
+
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">AI 예측</h1>
+    <i class="fas fa-download fa-sm text-white-50"></i>
+</div>
+
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-primary" onclick="AITrain()">학습하기</button>
+    <button type="button" class="btn btn-outline-primary" style="margin-right:89%" onclick="AIDisplay()">예측하기</button>
+</div>
+
+
+@*<body>
+    <div id="container" style="height: 400px; min-width: 310px"></div>
+    <script>
+
+
+        function draw3() {
+            var chartdata = [];
+            $.getJSON('https://cors-anywhere.herokuapp.com/https://api.finance.naver.com/service/itemSummary.nhn?itemcode=005930', function (data) {
+                $.each(data, function (i, item) {
+                    console.log(data);
+                    chartdata.push([(data.now + data.diff), data.high, data.low, data.now]);
+                    console.log(data.high);
+                });
+            }).done(function () {
+                Highcharts.stockChart('container', {
+                    title: {
+                        text: '주가 조회'
+                    },
+                    rangeSelector: {
+                        buttons: [
+                            { type: 'hour', count: 1, text: '1h' },
+                            { type: 'day', count: 1, text: '1d' },
+                            { type: 'all', count: 1, text: 'All' }
+                        ],
+                        selected: 2,
+                        inputEnabled: true
+                    },
+                    plotOptions: {
+                        candlestick: {
+                            downColor: 'blue',
+                            upColor: 'red'
+                        }
+                    },
+                    series: [{
+                        name: 'TEST',
+                        type: 'candlestick',
+                        data: chartdata,
+                        tooltip: {
+                            valueDecimals: 8
+                        }
+                    }]
+                });
+            });
+        }
+        draw3();
+    </script>
+</body>*@
+
+
+<div class="container-fluid" style="margin-top:30px;">
+
+
+
+    <!-- Content Row -->
+
+    <div class="row">
+
+        <!-- Area Chart -->
+        <div class="col-xl-12 col-lg-12">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">예측</h6>
+                    <div class="dropdown no-arrow">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                             aria-labelledby="dropdownMenuLink">
+                            <div class="dropdown-header">Dropdown Header:</div>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="myAreaChart_AI"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container-fluid">
+
+
+
+    <!-- Content Row -->
+
+    <div class="row">
+
+        <!-- Area Chart -->
+        <div class="col-xl-12 col-lg-12">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">예측 VS 실제</h6>
+                    <div class="dropdown no-arrow">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                             aria-labelledby="dropdownMenuLink">
+                            <div class="dropdown-header">Dropdown Header:</div>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="myAreaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+
+
+    function AITrain() {
+
+        console.log("학습하기");
+
+    }
+
+    function AIDisplay() {
+
+        console.log("예측하기");
+
+    }
+
+
+    //function insertItem() {
+
+    //    console.log("insetItem 함수 초훌")
+    //    let name = {
+    //        "name": $("#search_name").val()
+    //    };
+
+    //    Item(name);
+    //}
+    //function Item(name) {		// 추가
+
+    //    console.log('item 함수 호출');
+    //    console.log(name);
+
+    //    fetch("http://localhost:5000" + "/asd", {
+    //        method: 'POST',
+    //        headers: {
+    //            'Accept': 'application/json',
+    //            'Content-Type': 'application/json',
+    //        },
+    //        body: JSON.stringify(name)
+
+    //    })
+
+    //        .then((res) => {    
+    //            if (res.ok) {
+    //                console.log(res.json);
+    //            }
+    //            else {  
+    //                alert('오류가 발생했습니다.');
+    //                console.error(res);
+    //            }
+    //        }).catch(err => console.error(err))
+    //        .then(data => console.log(data))
+    //}
+
+</script>

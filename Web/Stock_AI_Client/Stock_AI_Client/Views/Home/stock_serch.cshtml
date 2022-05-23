@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/css/select2.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+
+<script src="~/bt/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="~/bt/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<link rel="stylesheet" href="~/bt/vendor/datatables/dataTables.bootstrap4.min.css" />
+
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">증시 조회</h1>
+    <i class="fas fa-download fa-sm text-white-50"></i>
+    <h4 id="kospi" style="color:black;  margin-right:40%"></h4>
+    
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+
+    function kospi() {
+    const el = document.createElement('body');
+
+    axios.get('https://cors-anywhere.herokuapp.com/https://finance.naver.com/')
+        .then(res => res.request)
+        .then(res => res.responseText)
+        .then(res => {
+            el.innerHTML = res;
+
+            console.log("aaa")
+            const num4 = el.querySelector(".section_stock .quot_opn .num_quot .blind")
+            const data4 = num4.innerHTML;
+
+            let colName = "";
+            let str = "";
+
+            if (data4 == "-") {
+                colName = "blue";
+                str = "▼";
+
+            } else {
+                colName = "#FD0202";
+                str = "▲";
+            }
+
+            const num = el.querySelector(".section_stock .quot_opn .num_quot .num");
+            const data = num.innerHTML;
+            const num2 = el.querySelector(".section_stock .quot_opn .num_quot .num2")
+            const data2 = num2.innerHTML;
+            const num3 = el.querySelector(".section_stock .quot_opn .up .num3")
+            const data3 = num3.innerHTML;
+
+            data3R = data3.replace('<span class="blind">', '');
+            data3RR = data3R.replace('</span>', '');
+            data3RRR = data3RR.replace('<span class="per">', '');
+            data3RRRR = data3RRR.replace('</span>', '');
+
+            document.getElementById("kospi").style.color = colName;
+
+            $("#kospi").text("코스피\u00a0\u00a0\u00a0\u00a0\u00a0" + data + "\u00a0\u00a0\u00a0" + str + "\u00a0" + data2 + "\u00a0\u00a0\u00a0" + data3RRRR);
+
+        })
+
+    }
+
+        
+    startGetData = function () {
+        playGetData = setInterval(function () {			//  데이터 새로고침
+
+            drawtable();
+            kospi();
+        }, 5000);
+    };
+
+    stopGetData = function () {
+        clearInterval(playGetData);
+    };
+
+    startGetData();
+
+
+
+
+    $(document).ready(function () {
+        drawSam();
+        test();
+    });
+
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/js/select2.min.js"></script>
+<script>
+
+    $('#serch_stock').select2({
+        minimumResultsForSearch: Infinity
+    });
+
+</script>
+
+<!-- Content Row -->
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-xl-12 col-lg-12">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h5 class="m-0 font-weight-bold text-primary">주가 그래프</h5>
+                    <select id="serch_stock" class="form-control shadow" style="width: 20%; margin-left: 73%;">
+                        <option value="s">삼성전자</option>
+                        <option value="k">카카오</option>
+                        <option value="h">현대차</option>
+
+                    </select>
+                    <div class="dropdown no-arrow">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @*<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>*@
+                        </a>
+                    </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="dropdown no-arrow text-center" style="width:30%;">
+                    </div>
+                    <div id="container" style="height: 400px; min-width: 310px;">
+
+
+                    </div>
+
+                    <script>
+                     
+                        let name = "삼성전자";
+
+                        $("#serch_stock").change(function () {
+
+                            if ($(this).val() == "s") {
+                                name = "삼성전자"
+                                drawSam();
+
+                            }
+                            else if ($(this).val() == "k") {
+                                name = "카카오";
+                                drawkakao();
+
+                            }
+                            else if ($(this).val() == "h") {
+                                name = "현대차";
+                                drawhyun();
+
+                            }
+
+                        })
+
+                        //삼성
+                        function drawSam() {
+                            var chartdata = [];
+                            $.getJSON('http://127.0.0.1:5000/sam', function (data) {
+                                $.each(data, function (i, item) {
+
+                                    let s = ".";
+                                    let a = (item.date).toString().substring(0, 4);
+                                    let b = (item.date).toString().substring(4, 6);
+                                    let c = (item.date).toString().substring(6, 8);
+                                    var d = [a, s, b, s, c].join('');
+
+                                    let date = new Date(d).getTime() / 1000
+
+                                    chartdata.push([date * 1000, item.open, item.high, item.low, item.close]);
+
+                                });
+                            }).done(function () {
+                                Highcharts.stockChart('container', {
+                                    title: {
+                                        text: name
+                                    },
+                                    rangeSelector: {
+                                        buttons: [
+                                            { type: 'hour', count: 1, text: '1h' },
+                                            { type: 'day', count: 1, text: '1d' },
+                                            { type: 'all', count: 1, text: 'All' }
+                                        ],
+                                        selected: 2,
+                                        inputEnabled: true
+                                    },
+                                    plotOptions: {
+                                        candlestick: {
+                                            downColor: 'blue',
+                                            upColor: 'red'
+                                        }
+                                    },
+                                    series: [{
+                                        name: name,
+                                        type: 'candlestick',
+                                        data: chartdata,
+                                        tooltip: {
+                                            valueDecimals: 8
+                                        }
+                                    }]
+                                });
+                            });
+                        }
+
+
+
+
+
+                        //카카오
+                        function drawkakao() {
+                            var chartdata = [];
+                            $.getJSON('http://127.0.0.1:5000/kakao', function (data) {
+                                $.each(data, function (i, item) {
+
+                                    let s = ".";
+                                    let a = (item.date).toString().substring(0, 4);
+                                    let b = (item.date).toString().substring(4, 6);
+                                    let c = (item.date).toString().substring(6, 8);
+                                    var d = [a, s, b, s, c].join('');
+
+                                    let date = new Date(d).getTime() / 1000
+
+                                    chartdata.push([date * 1000, item.open, item.high, item.low, item.close]);
+
+                                });
+                            }).done(function () {
+                                Highcharts.stockChart('container', {
+                                    title: {
+                                        text: name
+                                    },
+                                    rangeSelector: {
+                                        buttons: [
+                                            { type: 'hour', count: 1, text: '1h' },
+                                            { type: 'day', count: 1, text: '1d' },
+                                            { type: 'all', count: 1, text: 'All' }
+                                        ],
+                                        selected: 2,
+                                        inputEnabled: true
+                                    },
+                                    plotOptions: {
+                                        candlestick: {
+                                            downColor: 'blue',
+                                            upColor: 'red'
+                                        }
+                                    },
+                                    series: [{
+                                        name: name,
+                                        type: 'candlestick',
+                                        data: chartdata,
+                                        tooltip: {
+                                            valueDecimals: 8
+                                        }
+                                    }]
+                                });
+                            });
+                        }
+
+
+
+
+                        //현대차
+                        function drawhyun() {
+                            var chartdata = [];
+                            $.getJSON('http://127.0.0.1:5000/hyun', function (data) {
+                                $.each(data, function (i, item) {
+
+                                    let s = ".";
+                                    let a = (item.date).toString().substring(0, 4);
+                                    let b = (item.date).toString().substring(4, 6);
+                                    let c = (item.date).toString().substring(6, 8);
+                                    var d = [a, s, b, s, c].join('');
+
+                                    let date = new Date(d).getTime() / 1000
+
+                                    chartdata.push([date * 1000, item.open, item.high, item.low, item.close]);
+
+                                });
+                            }).done(function () {
+                                Highcharts.stockChart('container', {
+                                    title: {
+                                        text: name
+                                    },
+                                    rangeSelector: {
+                                        buttons: [
+                                            { type: 'hour', count: 1, text: '1h' },
+                                            { type: 'day', count: 1, text: '1d' },
+                                            { type: 'all', count: 1, text: 'All' }
+                                        ],
+                                        selected: 2,
+                                        inputEnabled: true
+                                    },
+                                    plotOptions: {
+                                        candlestick: {
+                                            downColor: 'blue',
+                                            upColor: 'red'
+                                        }
+                                    },
+                                    series: [{
+                                        name: name,
+                                        type: 'candlestick',
+                                        data: chartdata,
+                                        tooltip: {
+                                            valueDecimals: 8
+                                        }
+                                    }]
+                                });
+                            });
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+
+    <!-- Content Row -->
+    <div class="row">
+
+        <div class="col-xl-12 col-lg-12">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">구성종목(코스피 200)</h6>
+                    <div class="dropdown no-arrow">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @*<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>*@
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                             aria-labelledby="dropdownMenuLink">
+                            <div class="dropdown-header">Dropdown Header:</div>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area" style=" height: 150%">
+                        <!-- DataTales -->
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table text-center" id="table_id" width="100%" height="10%" cellspacing="0">
+                                    <thead id="my_thead">
+                                        <tr>
+                                            <th>종목코드</th>
+                                            <th>종목</th>
+                                            <th>현재가</th>
+                                            <th>전일대비(원)</th>
+                                            <th>전일대비(%)</th>
+                                            <th>거래량</th>
+                                            <th>거래대금(백만)</th>
+                                            <th>시가총액(억)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="my_tbody">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+@*주가 조회 테이블*@
+<script language='javascript'>
+
+
+    function test() {
+        $.getJSON('http://127.0.0.1:5000/', function (data) {
+            $.each(data, function (i, item) {
+                /*chartdata.push([item.thistime * 1000, item.pcv, item.mks, item.aq, item.aa]);*/
+                /*console.log(data.result.itemList[0].nm)*/
+                console.log(data);
+            });
+        })
+    }
+
+    function drawtable() {
+        $.getJSON('https://cors-anywhere.herokuapp.com/https://m.stock.naver.com/api/json/sise/enrollItemListJson.nhn?pageSize=202', function (data) {
+            $.each(data, function (i, item) {
+                /*chartdata.push([item.thistime * 1000, item.pcv, item.mks, item.aq, item.aa]);*/
+                /*console.log(data.result.itemList[0].nm)*/
+                displayItems(data);
+            });
+        })
+    }
+
+    function displayItems(data) {
+
+        var text_color = "";
+        var table = $("#table_id").DataTable();
+        table.clear();
+
+
+        for (let i = 0; i < data.result.itemList.length; i++) {
+
+            //if (data.result.itemList[i].nm == "삼성전자" || data.result.itemList[i].nm == "현대차" || data.result.itemList[i].nm == "카카오") {
+
+            let str = String(data.result.itemList[i].cv);
+
+            if (str.substring(0, 1) == "0") {
+                text_color = "#858796";
+            }
+            else if (str.substring(0, 1) == "-") {
+                text_color = "#0B0FDC";
+            }
+            else if (str.substring(0, 1) != "-") {
+                text_color = "#DA171A";
+
+            }
+
+
+            table.row.add($('<tr>'
+
+                + '<td>' + data.result.itemList[i].cd + '</td>'
+                + '<td style="font-weight:bold">' + data.result.itemList[i].nm + '</td>'
+                + '<td>' + data.result.itemList[i].nv + '</td>'
+                + '<td style="font-weight:bold; color:' + text_color + '">' + data.result.itemList[i].cv + '</td>'
+                + '<td style="font-weight:bold; color:' + text_color + '">' + data.result.itemList[i].cr + '</td>'
+                + '<td>' + data.result.itemList[i].aq + '</td>'
+                + '<td>' + data.result.itemList[i].aa + '</td>'
+                + '<td>' + data.result.itemList[i].mks + '</td>'
+
+                + '</tr>')).draw(false);
+            /* }*/
+        }
+    }
+
+
+</script>

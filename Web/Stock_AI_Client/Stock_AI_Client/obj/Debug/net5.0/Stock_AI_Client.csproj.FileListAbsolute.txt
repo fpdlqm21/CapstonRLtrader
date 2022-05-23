@@ -1,0 +1,87 @@
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\appsettings.json
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.exe
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.deps.json
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.runtimeconfig.json
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.runtimeconfig.dev.json
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.dll
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\ref\Stock_AI_Client.dll
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.pdb
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.Views.dll
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.Views.pdb
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.csproj.AssemblyReference.cache
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.AssemblyInfoInputs.cache
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.AssemblyInfo.cs
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.csproj.CoreCompileInputs.cache
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.RazorAssemblyInfo.cache
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.RazorAssemblyInfo.cs
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\staticwebassets\Stock_AI_Client.StaticWebAssets.Manifest.cache
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\staticwebassets\Stock_AI_Client.StaticWebAssets.xml
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\scopedcss\bundle\Stock_AI_Client.styles.css
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.TagHelpers.input.cache
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.TagHelpers.output.cache
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.RazorCoreGenerate.cache
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.RazorTargetAssemblyInfo.cache
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.RazorTargetAssemblyInfo.cs
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.Views.pdb
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.dll
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\ref\Stock_AI_Client.dll
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.pdb
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.genruntimeconfig.cache
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.csproj.CopyComplete
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Home\test_1.cshtml.g.cs
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Home\main_1.cshtml.g.cs
+C:\Users\hee05\source\repos\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Home\Index1.cshtml.g.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\appsettings.json
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.exe
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.deps.json
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.runtimeconfig.json
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.runtimeconfig.dev.json
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.dll
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\ref\Stock_AI_Client.dll
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.pdb
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.Views.dll
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\bin\Debug\net5.0\Stock_AI_Client.Views.pdb
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.csproj.AssemblyReference.cache
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.AssemblyInfoInputs.cache
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.AssemblyInfo.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.csproj.CoreCompileInputs.cache
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.RazorAssemblyInfo.cache
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.RazorAssemblyInfo.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\staticwebassets\Stock_AI_Client.StaticWebAssets.Manifest.cache
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\staticwebassets\Stock_AI_Client.StaticWebAssets.xml
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\scopedcss\bundle\Stock_AI_Client.styles.css
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.TagHelpers.input.cache
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.TagHelpers.output.cache
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.RazorCoreGenerate.cache
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Home\Index1.cshtml.g.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Home\main_1.cshtml.g.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Home\test_1.cshtml.g.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.RazorTargetAssemblyInfo.cache
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.RazorTargetAssemblyInfo.cs
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.Views.pdb
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.dll
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\ref\Stock_AI_Client.dll
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.pdb
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.genruntimeconfig.cache
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_AI_Client\Stock_AI_Client\obj\Debug\net5.0\Stock_AI_Client.csproj.CopyComplete
+C:\Users\hee05\OneDrive\바탕 화면\대학\캡스톤_지능_파일\Stock_Ai_Client\Stock_AI_Client\obj\Debug\net5.0\Razor\Views\Home\stock_serch.cshtml.g.cs
