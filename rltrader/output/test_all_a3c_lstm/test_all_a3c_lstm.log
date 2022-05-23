@@ -1,0 +1,10 @@
+{"mode": "test", "ver": "v3", "name": "all", "stock_code": ["005930", "005380", "035720"], "rl_method": "a3c", "net": "lstm", "backend": "pytorch", "start_date": "20200101", "end_date": "20211231", "lr": 0.0001, "discount_factor": 0.7, "balance": 100000000}
+[005930] RL:a3c NET:lstm LR:0.0001 DF:0.7 
+[005380] RL:a3c NET:lstm LR:0.0001 DF:0.7 
+[035720] RL:a3c NET:lstm LR:0.0001 DF:0.7 
+[005930][Epoch 1/1] Epsilon:0.0000 #Expl.:0/492 #Buy:117 #Sell:100 #Hold:275 #Stocks:1364 PV:106,862,320 Loss:0.000000 ET:5.4387
+[005930] Elapsed Time:8.5034 Max PV:106,862,320 #Win:1
+[005380][Epoch 1/1] Epsilon:0.0000 #Expl.:0/492 #Buy:32 #Sell:13 #Hold:447 #Stocks:1128 PV:235,821,205 Loss:0.000000 ET:7.2664
+[035720][Epoch 1/1] Epsilon:0.0000 #Expl.:0/492 #Buy:24 #Sell:5 #Hold:463 #Stocks:2806 PV:315,694,177 Loss:0.000000 ET:7.2351
+[005380] Elapsed Time:10.5373 Max PV:235,821,205 #Win:1
+[035720] Elapsed Time:12.2400 Max PV:315,694,177 #Win:1

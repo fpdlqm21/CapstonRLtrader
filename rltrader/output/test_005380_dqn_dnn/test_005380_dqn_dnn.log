@@ -1,0 +1,4 @@
+{"mode": "test", "ver": "v3", "name": "005380", "stock_code": ["005380"], "rl_method": "dqn", "net": "dnn", "backend": "pytorch", "start_date": "20180101", "end_date": "20191231", "lr": 0.0001, "discount_factor": 0.7, "balance": 100000000}
+[005380] RL:dqn NET:dnn LR:0.0001 DF:0.7 
+[005380][Epoch 1/1] Epsilon:0.0000 #Expl.:0/490 #Buy:51 #Sell:38 #Hold:401 #Stocks:779 PV:93,931,946 Loss:0.000000 ET:2.3614
+[005380] Elapsed Time:4.9563 Max PV:93,931,946 #Win:0
